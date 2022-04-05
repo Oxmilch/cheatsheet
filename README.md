@@ -1,28 +1,23 @@
-# cheatsheet
-**備忘録的なチートシート**  
+# 個人的な備忘録  
+Private memorandum.  
 Sorry, This Repository is written in Japanese.  
 
 ## 書いてあるもの
-### **RDB**  
+### **言語**  
+・Shell  
+　- git  
+・JavaScript  
+　- jQuery  
+
+### **リレーショナルデータベース**  
 ・Oracle  
 
 ## 書く予定のもの
-### **Software** 
-・VSCode  
-・VisualStudio  
-・Eclipse  
-### **git, github**
-・導入方法  
-　－Windows  
-　－macOS  
-　－Ubuntu  
-・各コマンドの使い方  
-### **RDB** 
-・SQLServer  
-・Oracle  
-・MySQL  
-・Postgresql  
-### **Programming Language** 
+### **クラウドサービス** 
+・AWS  
+・GitHub  
+
+### **言語** 
 ・JavaScript  
 　－DOM  
 　－jQuery  
@@ -30,9 +25,22 @@ Sorry, This Repository is written in Japanese.
 ・C#.Net  
 ・Java  
 ・RPG  
-### **Markup, Markdown, Other** 
 ・HTML  
 ・CSS  
 ・Markdown  
-### **Cloud Services** 
-・AWS  
+・Shell  
+　－Command prompt  
+　－Terminal(macOS)  
+　－Terminal(ubuntu)  
+　－git  
+
+### **リレーショナルデータベース** 
+・SQLServer  
+・Oracle  
+・MySQL  
+・Postgresql  
+
+### **ソフトウェア** 
+・VSCode  
+・VisualStudio  
+・Eclipse  
