@@ -3,7 +3,8 @@
 Sorry, This Repository is written in Japanese.  
 
 ## 書いてあるもの
-・まだないよ  
+### **RDB**  
+・Oracle  
 
 ## 書く予定のもの
 ### **Software** 
