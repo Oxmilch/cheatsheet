@@ -10,11 +10,15 @@
 　　[- wslconfigパラメータ説明](#wslconfigパラメータ説明)  
 　　[- wslconfigパラメータ内容](#wslconfigパラメータ内容)  
 - [WSLコマンド](#wslコマンド)  
+- [WSL2のアンインストール](#WSL2のアンインストール)
 
 
 # WSL2のインストールと有効化  
-[Microsoft Docs - WSLの手動インストール手順](https://docs.microsoft.com/ja-jp/windows/wsl/install-manual)  
+- [Microsoft Docs - WSLの手動インストール手順 Win10 v2004以降, win11](https://learn.microsoft.com/ja-jp/windows/wsl/install)  
+- [Microsoft Docs - WSLの手動インストール手順 旧バージョン](https://docs.microsoft.com/ja-jp/windows/wsl/install-manual)  
 > ※PowerShellを管理者で実行すること
+
+Windows 10 v2004以降、またはWindows 11 の場合は、手順 5から実施でOK。
 
 ## １. Linux用 Windowsサブシステムを有効にする  
 ```powershell
@@ -38,6 +42,22 @@ wsl --set-default-version 2
 ```powershell
 wsl --list --online
 ```
+※ 2023年 9月現在
+| NAME | FRENDLY NAME |
+|-|-|
+|Ubuntu|Ubuntu|
+|Debian|Debian GNU/Linux|
+|kali-linux|kali Linux Rolling|
+|Ubuntu-18.04|Ubuntu 18.04 LTS|
+|Ubuntu-20.04|Ubuntu 20.04 LTS|
+|Ubuntu-22.04|Ubuntu 22.04 LTS|
+|OracleLinux_7_9|OracleLinux 7.9|
+|OracleLinux_8_7|OracleLinux 8.7|
+|OracleLinux_9_1|OracleLinux 9.1|
+|openSUSE-Leap-15.5|openSUSE Leap 15.5|
+|SUSE-Linux-Enterprise-Server-15-SP4|SUSE Linux Enterprise Server 15 SP4|
+|SUSE-Linux-Enterprise-15-SP5|SUSE Linux Enterprise 15 SP5|
+|openSUSE-Tumbleweed|openSUSE Tumbleweed|
 
 ## 6. Linuxのインストール(Debianの場合)  
 ```powershell
@@ -84,3 +104,9 @@ WSL2 で実行されているインストール済みディストリビューシ
 
 # WSLコマンド
 [Microsoft Docs - WSLの基本的なコマンド](https://docs.microsoft.com/ja-jp/windows/wsl/basic-commands)  
+
+# WSL2のアンインストール
+- 設定 -> アプリ -> インストールされているアプリ
+  - Linux 用 Windows サブシステム
+  - インストールしたディストリビュージョン
+  - 
