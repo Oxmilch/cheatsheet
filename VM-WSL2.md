@@ -1,5 +1,5 @@
 # 目次
-- [WSL2のインストールと有効化](#wsl2のインストールと有効化)  
+- [WSL21のインストールと有効化（旧）](#wsl2のインストールと有効化旧)   
 　[1. Linux用 Windowsサブシステムを有効にする](#１-linux用-windowsサブシステムを有効にする)  
 　[2. 仮想マシンの機能を有効にする](#２-仮想マシンの機能を有効にする)  
 　[3. Linuxカーネル更新プログラムパッケージをインストールする](#３-linuxカーネル更新プログラムパッケージをインストールする)  
@@ -10,10 +10,9 @@
 　　[- wslconfigパラメータ説明](#wslconfigパラメータ説明)  
 　　[- wslconfigパラメータ内容](#wslconfigパラメータ内容)  
 - [WSLコマンド](#wslコマンド)  
-- [WSL2のアンインストール](#WSL2のアンインストール)
+- [WSL2のアンインストールと無効化](#wsl2のアンインストールと無効化)
 
-
-# WSL2のインストールと有効化  
+# WSL2のインストールと有効化
 - [Microsoft Docs - WSLの手動インストール手順 Win10 v2004以降, win11](https://learn.microsoft.com/ja-jp/windows/wsl/install)  
 - [Microsoft Docs - WSLの手動インストール手順 旧バージョン](https://docs.microsoft.com/ja-jp/windows/wsl/install-manual)  
 > ※PowerShellを管理者で実行すること
@@ -42,7 +41,7 @@ wsl --set-default-version 2
 ```powershell
 wsl --list --online
 ```
-※ 2023年 9月現在
+※ 2024年 3月現在
 | NAME | FRENDLY NAME |
 |-|-|
 |Ubuntu|Ubuntu|
@@ -60,6 +59,11 @@ wsl --list --online
 |openSUSE-Tumbleweed|openSUSE Tumbleweed|
 
 ## 6. Linuxのインストール(Debianの場合)  
+１～４までの手順を飛ばした場合は、こちらのコマンドを実行する
+```powershell
+wsl --install
+```
+ディストリビュージョンのインストール
 ```powershell
 wsl --install -d Debian
 ```
@@ -105,8 +109,14 @@ WSL2 で実行されているインストール済みディストリビューシ
 # WSLコマンド
 [Microsoft Docs - WSLの基本的なコマンド](https://docs.microsoft.com/ja-jp/windows/wsl/basic-commands)  
 
-# WSL2のアンインストール
-- 設定 -> アプリ -> インストールされているアプリ
-  - Linux 用 Windows サブシステム
-  - インストールしたディストリビュージョン
-  - 
+# WSL2のアンインストールと無効化
+正常にインストールできない場合は次の手順を踏んでアンインストールする。
+- 削除するアプリケーション
+  - Windowsの設定 -> アプリ -> アプリと機能
+    - Linux用Windowsサブシステム
+    - インストールしたLinuxのディストリビュージョン
+
+- 無効化する機能
+  - Windowsのアプリ一覧 -> Windowsツール -> コントロールパネル -> プログラム -> プログラムのアンインストール -> Windowsの機能の有効化または無効化
+    - Linux用Windowsサブシステム
+    - 仮想マシンプラットフォーム
