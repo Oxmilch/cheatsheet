@@ -1,5 +1,5 @@
 # 目次
-- [WSL21のインストールと有効化（旧）](#wsl2のインストールと有効化旧)   
+- [WSL2のインストールと有効化](#wsl2のインストールと有効化)   
 　[1. Linux用 Windowsサブシステムを有効にする](#１-linux用-windowsサブシステムを有効にする)  
 　[2. 仮想マシンの機能を有効にする](#２-仮想マシンの機能を有効にする)  
 　[3. Linuxカーネル更新プログラムパッケージをインストールする](#３-linuxカーネル更新プログラムパッケージをインストールする)  
@@ -59,7 +59,7 @@ wsl --list --online
 |openSUSE-Tumbleweed|openSUSE Tumbleweed|
 
 ## 6. Linuxのインストール(Debianの場合)  
-１～４までの手順を飛ばした場合は、こちらのコマンドを実行する
+１～４までの手順を飛ばした場合は、こちらのコマンドから実行する
 ```powershell
 wsl --install
 ```
@@ -96,7 +96,7 @@ WSL2 で実行されているインストール済みディストリビューシ
 # kernel=
 # kernelCommandLine =
 # swap=2GB
-# swapfile=%USERPROFILE%\AppData\Local\Temp\swap.vhdx
+# swapfile=%USERPROFILE%\\AppData\\Local\\Temp\\swap.vhdx
 # pageReporting=true
 # localhostforwarding=true
 # nestedVirtualization=false
@@ -112,11 +112,11 @@ WSL2 で実行されているインストール済みディストリビューシ
 # WSL2のアンインストールと無効化
 正常にインストールできない場合は次の手順を踏んでアンインストールする。
 - 削除するアプリケーション
-  - Windowsの設定 -> アプリ -> アプリと機能
+  - Windowsの設定 -> アプリ -> インストールされているアプリ
     - Linux用Windowsサブシステム
     - インストールしたLinuxのディストリビュージョン
 
 - 無効化する機能
-  - Windowsのアプリ一覧 -> Windowsツール -> コントロールパネル -> プログラム -> プログラムのアンインストール -> Windowsの機能の有効化または無効化
+  - スタート -> Windowsのアプリ一覧 -> Windowsツール -> コントロールパネル -> プログラムと機能 -> Windowsの機能の有効化または無効化
     - Linux用Windowsサブシステム
     - 仮想マシンプラットフォーム
