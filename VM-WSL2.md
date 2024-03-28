@@ -12,6 +12,9 @@
 - [WSLコマンド](#wslコマンド)  
 - [WSL2のアンインストールと無効化](#wsl2のアンインストールと無効化)
 
+# 基本情報
+[Microsoft Learn - Windows Subsystem for Linux に関するドキュメント](https://learn.microsoft.com/ja-jp/windows/wsl/)
+
 # WSL2のインストールと有効化
 - [Microsoft Docs - WSLの手動インストール手順 Win10 v2004以降, win11](https://learn.microsoft.com/ja-jp/windows/wsl/install)  
 - [Microsoft Docs - WSLの手動インストール手順 旧バージョン](https://docs.microsoft.com/ja-jp/windows/wsl/install-manual)  
