@@ -120,3 +120,17 @@ WSL2 で実行されているインストール済みディストリビューシ
   - スタート -> Windowsのアプリ一覧 -> Windowsツール -> コントロールパネル -> プログラムと機能 -> Windowsの機能の有効化または無効化
     - Linux用Windowsサブシステム
     - 仮想マシンプラットフォーム
+
+# WSL2でsystemctlを有効化する
+[Qiita - WSL2でsystemctlを使う方法](https://qiita.com/curacao/items/fb9adaf1c097b1acd6a8)  
+標準でsystemdがPID=1で起動されないため、WSL起動時にPID=1になるように設定する  
+以下ファイルを開く
+```bash
+sudo vi /etc/wsl.conf
+```
+wsl.confの内容は以下の通りにする
+```bash
+[boot]
+systemd=ture
+```
+変更が終わったら、WSL2を再起動する
